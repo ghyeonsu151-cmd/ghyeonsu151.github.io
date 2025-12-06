@@ -1,101 +1,96 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>나의 멋진 자기소개</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>멋진 자기소개</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      text-align: center;
-    }
+  .intro-container {
+    text-align: center;
+    animation: fadeIn 2s ease forwards;
+  }
 
-    .container {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 40px 30px;
-      border-radius: 15px;
-      max-width: 500px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
-    }
+  @keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(-50px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
-    }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    animation: slideIn 1s ease forwards;
+  }
 
-    h2 {
-      font-weight: 400;
-      margin-bottom: 25px;
-      font-size: 1.2rem;
-      color: #d1c4e9;
-      letter-spacing: 1.2px;
-    }
+  @keyframes slideIn {
+    0% {opacity: 0; transform: translateX(-100px);}
+    100% {opacity: 1; transform: translateX(0);}
+  }
 
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #e0d7f5;
-      margin-bottom: 30px;
-    }
+  h2 {
+    font-size: 1.5rem;
+    color: #a0c4ff;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease 0.5s forwards;
+    opacity: 0;
+  }
 
-    .btn {
-      display: inline-block;
-      background: #ff6f61;
-      color: white;
-      font-weight: 700;
-      padding: 15px 40px;
-      font-size: 1rem;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 5px 15px rgba(255,111,97,0.5);
-      transition: background 0.3s ease;
-    }
+  p {
+    font-size: 1.1rem;
+    color: #dbe7ff;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease 1s forwards;
+    opacity: 0;
+  }
 
-    .btn:hover {
-      background: #ff3b2e;
-      box-shadow: 0 8px 20px rgba(255,59,46,0.7);
-    }
+  .btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #ff6f61;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+  }
 
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #bb9ee5;
-    }
+  .btn:hover {
+    background: #ff3b2e;
+    transform: scale(1.1);
+  }
 
-  </style>
+  footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.9rem;
+    color: #a0c4ff;
+    animation: fadeIn 1s ease 1.5s forwards;
+    opacity: 0;
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>안녕하세요, 저는 김현수입니다</h1>
-    <h2>프론트엔드 개발자 & 디자인 애호가</h2>
-    <p>
-      새로운 기술을 배우고 성장하는 것을 좋아하며,<br />
-      창의적인 아이디어로 세상을 더 멋지게 바꾸고 싶습니다.<br />
-      이 공간은 나의 작은 디지털 무대입니다.
-    </p>
-    <a href="mailto:your.email@example.com" class="btn">이메일 보내기</a>
-    <footer>
-      &copy; 2025 [당신 이름]. All rights reserved.
-    </footer>
+  <div class="intro-container">
+    <h1>안녕하세요! 저는 [당신 이름]</h1>
+    <h2>웹 개발자 & 크리에이티브 러너</h2>
+    <p>끊임없이 배우고 성장하며,  
+       세상에 작은 변화를 만들어내고 싶습니다.</p>
+    <a class="btn" href="mailto:your.email@example.com">연락하기</a>
   </div>
+  <footer>&copy; 2025 [당신 이름]. All Rights Reserved.</footer>
 </body>
 </html>

@@ -5,73 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>김현수 | 자기소개</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
   body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
   }
 
-  .header {
-    background-color: #4b6cb7;
-    background-image: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-  }
-
-  .header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-
-  .header p {
-    font-size: 1.2rem;
-    color: #dcdcdc;
-  }
-
-  .container {
-    max-width: 1000px;
-    margin: -40px auto 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 0 20px;
-  }
-
-  .card {
-    background-color: white;
+  .resume {
+    background-color: rgba(255, 255, 255, 0.95);
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
     border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   }
 
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-  }
-
-  .card h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
     color: #4b6cb7;
   }
 
-  .card ul {
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #dcdde1;
+    padding-bottom: 5px;
+    color: #764ba2;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+  }
+
+  ul {
     list-style: none;
     padding-left: 0;
   }
 
-  .card ul li {
-    margin-bottom: 10px;
+  ul li {
+    margin-bottom: 8px;
+    padding-left: 18px;
     position: relative;
-    padding-left: 15px;
+    font-size: 1rem;
+    color: #333;
   }
 
-  .card ul li::before {
+  ul li::before {
     content: "•";
     position: absolute;
     left: 0;
@@ -80,7 +73,7 @@
   }
 
   .contact a {
-    color: #4b6cb7;
+    color: #764ba2;
     text-decoration: none;
   }
 
@@ -90,7 +83,7 @@
 
   footer {
     text-align: center;
-    padding: 20px;
+    margin-top: 40px;
     font-size: 0.9rem;
     color: #777;
   }
@@ -98,55 +91,40 @@
 </style>
 </head>
 <body>
-
-  <header class="header">
+  <div class="resume">
     <h1>김현수</h1>
-    <p>웹 개발자 | 프론트엔드 & 백엔드 학습중 | 크리에이티브 러너</p>
-  </header>
+    <p>웹 개발자 | 프론트엔드 & 백엔드 학습중 | 창의적 문제 해결을 즐깁니다</p>
 
-  <div class="container">
+    <h2>학력</h2>
+    <ul>
+      <li>동의대학교 - 소프트웨어융합대학 (입학년도 ~ 졸업 예정년도)</li>
+    </ul>
 
-    <div class="card">
-      <h2>학력</h2>
-      <ul>
-        <li>동의대학교 - 소프트웨어융합대학 (2025 ~ 2035)</li>
-        <li>대양고등학교 - 공업계 (2022 ~ 2024)</li>
-      </ul>
-    </div>
+    <h2>공부 / 기술</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Vue.js 등 프론트엔드 프레임워크</li>
+      <li>Node.js, Python 등 백엔드 개발</li>
+      <li>Git, GitHub을 이용한 버전 관리</li>
+      <li>웹 디자인, UI/UX 기초</li>
+    </ul>
 
-    <div class="card">
-      <h2>공부 / 기술</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React, Vue.js 등 프론트엔드 프레임워크 학습</li>
-        <li>Node.js, Python 등 백엔드 공부</li>
-        <li>Git, GitHub을 이용한 버전 관리</li>
-        <li>웹 디자인, UI/UX 기초</li>
-      </ul>
-    </div>
+    <h2>프로젝트 / 경험</h2>
+    <ul>
+      <li>포트폴리오 사이트 제작 - 개인 웹사이트 구축 및 디자인</li>
+      <li>Todo 앱 프로젝트 - React와 Firebase 사용</li>
+    </ul>
 
-    <div class="card">
-      <h2>프로젝트 / 경험</h2>
-      <ul>
-        <li>포트폴리오 사이트 제작 - 개인 웹사이트 구축 및 디자인</li>
-        <li>Todo 앱 프로젝트 - React와 Firebase 사용</li>
-      </ul>
-    </div>
+    <h2>연락처</h2>
+    <ul class="contact">
+      <li>이메일: <a href="mailto:kimhyunsoo@example.com">kimhyunsoo@example.com</a></li>
+      <li>GitHub: <a href="https://github.com/ghyeonsu151">https://github.com/ghyeonsu151</a></li>
+      <li>포트폴리오 / 블로그: <a href="#">링크 입력</a></li>
+    </ul>
 
-    <div class="card contact">
-      <h2>연락처</h2>
-      <ul>
-        <li>이메일: <a href="mailto:kimhyunsoo@example.com">kimhyunsoo@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/ghyeonsu151">https://github.com/ghyeonsu151</a></li>
-        <li>포트폴리오 / 블로그: <a href="#">링크 입력</a></li>
-      </ul>
-    </div>
-
+    <footer>
+      &copy; 2025 김현수. All Rights Reserved.
+    </footer>
   </div>
-
-  <footer>
-    &copy; 2025 김현수. All Rights Reserved.
-  </footer>
-
 </body>
 </html>
